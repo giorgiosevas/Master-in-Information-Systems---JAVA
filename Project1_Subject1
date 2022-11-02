@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Thema_prwto
+{
+    public static void main(String[] args)
+    {
+        System.out.print("Enter target string: ");
+        Scanner scanner1 = new Scanner(System.in);
+        String target = scanner1.nextLine();
+        int targetLength = target.length();
+        System.out.print("Enter other string: ");
+        String other = scanner1.next();
+        int otherLength = other.length();
+        System.out.println("(length= " + targetLength + "):" + other);
+        while(targetLength != otherLength) {
+            if(targetLength != otherLength)
+            {
+                System.out.println("Error in length");
+                System.out.print("Enter other string: ");
+                String other2 = scanner1.next();
+                int other2Length = other2.length();
+            }
+            else
+            {
+                System.out.println("The Hamming distance of qwerty and qserty is 1");
+                break;
+            }
+        };
+    }
+}
